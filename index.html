@@ -1,0 +1,73 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FiveStarMoments Clipper Policies</title>
+<style>
+/* Layout: one narrow reading column, two policy sections with anchor links */
+:root {
+  --bg: #f6f7f9; --surface: #ffffff; --fg: #17191d; --muted: #5b6270; --line: #dfe3ea; --accent: #c2185b;
+  --display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+  --body: "Inter", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #121418; --surface: #1a1d23; --fg: #eceef2; --muted: #a2a9b6; --line: #2c313a; --accent: #ff5c93; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #121418; --surface: #1a1d23; --fg: #eceef2; --muted: #a2a9b6; --line: #2c313a; --accent: #ff5c93; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); margin: 0; font-size: 16px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 40px 64px; }
+main { max-width: 680px; margin: 0 auto; display: grid; gap: 28px; }
+header { display: grid; gap: 8px; }
+h1 { font-family: var(--display); font-size: 2rem; line-height: 1.15; margin: 0; text-wrap: balance; }
+.sub { color: var(--muted); margin: 0; }
+nav { display: flex; flex-wrap: wrap; gap: 16px; }
+nav a { color: var(--accent); font-weight: 600; text-decoration: none; }
+nav a:hover, nav a:focus-visible { text-decoration: underline; }
+section { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 24px; display: grid; gap: 12px; }
+h2 { font-family: var(--display); font-size: 1.4rem; margin: 0; }
+h3 { font-size: 1rem; margin: 8px 0 0; }
+p, ul { margin: 0; }
+ul { padding-left: 1.2em; display: grid; gap: 4px; }
+.date { font-size: 0.85rem; color: var(--muted); letter-spacing: 0.02em; }
+</style>
+</head><body>
+<main>
+  <header>
+    <h1>FiveStarMoments Clipper</h1>
+    <p class="sub">A private tool that sends FiveStarMoments' own short gaming clips to the owner's TikTok drafts.</p>
+    <nav><a href="#terms">Terms of Service</a><a href="#privacy">Privacy Policy</a></nav>
+  </header>
+
+  <section id="terms">
+    <h2>Terms of Service</h2>
+    <p class="date">Last updated: 24 November 2026</p>
+    <p>FiveStarMoments Clipper is a personal tool used only by the owner of the FiveStarMoments accounts. It is not offered to the public, and no one else can sign up for it.</p>
+    <h3>What the tool does</h3>
+    <p>It uploads short video clips made by FiveStarMoments to the owner's own TikTok account as drafts. Nothing is posted automatically: the owner reviews each draft in the TikTok app and decides whether to post it.</p>
+    <h3>Use of TikTok</h3>
+    <p>The tool uses TikTok's official APIs and follows TikTok's Terms of Service and Developer Terms. The owner is responsible for the content they choose to post.</p>
+    <h3>No warranty</h3>
+    <p>The tool is provided as is, for personal use, without any guarantee of availability.</p>
+    <h3>Changes</h3>
+    <p>These terms may be updated. The date above shows the latest version.</p>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+    <p class="date">Last updated: 24 November 2026</p>
+    <p>FiveStarMoments Clipper is used only by its owner, so the only TikTok account it ever connects to is the owner's own.</p>
+    <h3>Data the tool accesses</h3>
+    <ul>
+      <li>Basic profile info (display name and username), to confirm the right account is connected.</li>
+      <li>Permission to upload videos to that account's drafts.</li>
+    </ul>
+    <h3>How it is stored</h3>
+    <p>The TikTok login token is stored only on the owner's own computer. It is never shared, sold, or sent anywhere except to TikTok when uploading.</p>
+    <h3>What it does not do</h3>
+    <ul>
+      <li>It does not collect data about other TikTok users or viewers.</li>
+      <li>It does not use cookies, tracking, or advertising.</li>
+      <li>It does not sell or share data with anyone.</li>
+    </ul>
+    <h3>Removing access</h3>
+    <p>Access can be removed at any time in the TikTok app under Settings and privacy, Security, Manage app permissions.</p>
+  </section>
+</main>
+</body></html>
